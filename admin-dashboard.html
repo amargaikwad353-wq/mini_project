@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<header class="navbar">
+
+<nav class="nav-container">
+
+<h2 class="logo">Blood Bank</h2>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="search-donor.html">Find Donor</a></li>
+<li><a href="admin-login.html">Logout</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+
+<!-- Dashboard Section -->
+
+<section class="form-section">
+
+<h1>Admin Dashboard</h1>
+
+<!-- Dashboard Cards -->
+
+<div class="dashboard-cards">
+
+<div class="card">
+<h3>Total Donors</h3>
+<p id="totalDonors">0</p>
+</div>
+
+<div class="card">
+<h3>Total Requests</h3>
+<p id="totalRequests">0</p>
+</div>
+
+<div class="card">
+<h3>Total Users</h3>
+<p id="totalUsers">0</p>
+</div>
+
+</div>
+
+
+<!-- Donor List -->
+
+<h2>Registered Donors</h2>
+
+<table class="donor-table">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Blood Group</th>
+<th>City</th>
+<th>Phone</th>
+</tr>
+</thead>
+
+<tbody id="adminDonorTable">
+
+<tr>
+<td>Rahul Sharma</td>
+<td>A+</td>
+<td>Pune</td>
+<td>9876543210</td>
+</tr>
+
+<tr>
+<td>Amit Patil</td>
+<td>O+</td>
+<td>Mumbai</td>
+<td>9123456780</td>
+</tr>
+
+<tr>
+<td>Sneha Deshmukh</td>
+<td>B+</td>
+<td>Nagpur</td>
+<td>9988776655</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<br><br>
+
+
+<!-- Blood Request List -->
+
+<h2>Blood Requests</h2>
+
+<table class="donor-table">
+
+<thead>
+<tr>
+<th>Patient Name</th>
+<th>Blood Group</th>
+<th>City</th>
+<th>Units</th>
+<th>Contact</th>
+<th>Emergency Level</th>
+</tr>
+</thead>
+
+<tbody id="adminRequestTable">
+
+<tr>
+<td>Ravi Kumar</td>
+<td>O+</td>
+<td>Pune</td>
+<td>2</td>
+<td>9876541230</td>
+</tr>
+
+<tr>
+<td>Priya Singh</td>
+<td>B-</td>
+<td>Mumbai</td>
+<td>1</td>
+<td>9988771122</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+<!-- <p>Blood Bank Availability System © 2026</p> -->
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

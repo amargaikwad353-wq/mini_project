@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Blood Donor</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<header class="navbar">
+
+<nav class="nav-container">
+
+<h2 class="logo">Blood Bank</h2>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="donor-register.html">Donate Blood</a></li>
+<li><a href="request-blood.html">Request Blood</a></li>
+<li><a href="search-donor.html">Find Donor</a></li>
+<li><a href="user-login.html">User Login</a></li>
+<li><a href="admin-login.html">Admin Login</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Search Section -->
+
+<section class="form-section">
+
+<h1>Search Blood Donor</h1>
+
+<div class="search-box">
+
+<label>Blood Group</label>
+<select id="searchBlood" required>
+<option value="">Select Blood Group</option>
+<option value="A+">A+</option>
+<option value="A-">A-</option>
+<option value="B+">B+</option>
+<option value="B-">B-</option>
+<option value="O+">O+</option>
+<option value="O-">O-</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB-</option>
+</select>
+
+<label>City</label>
+<input type="text" id="searchCity" placeholder="Enter City" required>
+
+<button class="btn" id="searchBtn">Search</button>
+
+</div>
+
+<!-- Donor Table -->
+
+<table class="donor-table">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Blood Group</th>
+<th>City</th>
+<th>Phone</th>
+</tr>
+</thead>
+
+<tbody id="donorTable">
+
+<tr>
+<td>Rahul Sharma</td>
+<td>A+</td>
+<td>Mumbai</td>
+<td>9876543210</td>
+</tr>
+
+<tr>
+<td>Amit Verma</td>
+<td>O+</td>
+<td>Pune</td>
+<td>9876501234</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+<!-- <p>Blood Bank Availability System © 2026</p> -->
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
